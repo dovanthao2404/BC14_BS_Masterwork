@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="./css/thao.css" />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="fixed-top">
       <nav class="navbar navbar-expand-lg navbar-ligth">
         <div class="container-xl">
           <a href="" class="navbar-brand">
@@ -88,18 +88,19 @@
     </header>
     <section class="master__banner">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-6">
-            <div class="d-flex">
-              <div class="banner__left row align-items-center">
-                <h1>We Execute Our Ideas From Start to Finish</h1>
-                <p>We Execute Our Ideas From Start to Finish</p>
-                <input
-                  type="button"
-                  class="btn btn-outline-primary"
-                  value="GET STARTED"
-                />
-              </div>
+            <div class="banner__left">
+              <h1>We Execute Our Ideas From Start to Finish</h1>
+              <p>
+                Building a beautiful interactive business for startups and
+                innovative companies.
+              </p>
+              <input
+                type="button"
+                class="btn btn-outline-primary"
+                value="GET STARTED"
+              />
             </div>
           </div>
           <div class="col-6">
@@ -110,9 +111,112 @@
         </div>
       </div>
     </section>
-    <section class="master__introduce"></section>
-    <section class="master__about" style="height: 1000px"></section>
-    <section class="master__number"></section>
+    <section class="master__introduce py-5">
+      <div class="container">
+        <div class="header__section text-center mx-auto">
+          <h6>WHY CHOOSE US</h6>
+          <h1>Tools for business startup to professional</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-4 mt-5">
+            <div class="introduce__item text-center">
+              <img src="./img/s1.png" alt="" />
+              <h3 class="my-3">Interactive</h3>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium tempora rerum perspiciatis?
+              </p>
+            </div>
+          </div>
+          <div class="col-4 mt-5">
+            <div class="introduce__item text-center">
+              <img src="./img/s2.png" alt="" />
+              <h3 class="my-3">Business</h3>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium tempora rerum perspiciatis?
+              </p>
+            </div>
+          </div>
+          <div class="col-4 mt-5">
+            <div class="introduce__item text-center">
+              <img src="./img/s3.png" alt="" />
+              <h3 class="my-3">Inspiration</h3>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium tempora rerum perspiciatis?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="master__about py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 pr-5">
+            <div class="header__section mx-auto">
+              <h6>ABOUT OUR COMPANY</h6>
+              <h1 class="mb-4">
+                The Best Choice For Your Successful Business!
+              </h1>
+              <p class="mb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+                repellendus illum harum quam nihil totam reprehenderit! Ut sed
+                eveniet quos! Asperiores officia, repudiandae similique
+                reiciendis, ab est magnam esse nesciunt ea fuga facere
+                voluptatem.
+              </p>
+            </div>
+            <input type="button" class="btn btn-primary" value="READ MORE" />
+          </div>
+          <div class="col-6 pl-5">
+            <img class="img-fluid shadow" src="./img/about.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="master__number pb-5 pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="number__item">
+              <h4>Happy Customers</h4>
+              <span class="counter my-2">10458</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="number__item">
+              <h4>Happy Customers</h4>
+              <span class="counter my-2">890</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="number__item">
+              <h4>Happy Customers</h4>
+              <span class="counter my-2">5345</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="master__commit"></section>
     <section class="master__solutions"></section>
     <section class="master__faqs"></section>
@@ -132,12 +236,24 @@
     <script>
       $(window).scroll(function () {
         var sc = $(window).scrollTop();
-        if (sc > 1) {
-          $("#header").addClass("fixed-top");
+        if (sc > 100) {
+          $("#header").addClass("nav__fixed");
         } else {
-          $("#header").removeClass("fixed-top");
+          $("#header").removeClass("nav__fixed");
         }
       });
+    </script>
+    <!-- WAYPOINT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- COUNT UP -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
     </script>
   </body>
 </html>

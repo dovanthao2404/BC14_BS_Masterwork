@@ -52,7 +52,7 @@
   top: -7px;
   width: 14px;
   height: 14px;
-  transform: rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
   left: 49%;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-bottom: none;

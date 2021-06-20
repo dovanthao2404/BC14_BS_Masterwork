@@ -1,24 +1,21 @@
 /*#region HEADER */
 #header {
   background-color: #fff;
-  padding: 0px;
   transition: all 0.4s ease 0s;
   height: 90px;
   display: grid;
   align-items: center;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
-}
-#header .container-xl {
-  padding: 0;
+  z-index: 99;
 }
 #header.nav__fixed {
   height: 70px;
-  border-bottom: none;
+}
+#header .container-xl {
+  padding: 0;
 }
 #header .navbar-brand {
   margin-left: 15px;
@@ -32,22 +29,42 @@
 #menuHeader .nav-item .nav-link.active {
   color: #dc4f72;
 }
-#menuHeader .nav-item {
-  padding: 0 15px;
-}
 #menuHeader .nav-item .nav-link {
   padding: 14px 0;
   transition: all 0.5s ease;
   color: #333;
   font-weight: 400;
 }
+#menuHeader .nav-item:hover .nav-link {
+  color: #dc4f72;
+}
 #menuHeader .nav-item .dropdown-menu {
   padding: 16px 0 4px;
+  position: absolute;
+  min-width: 175px;
+  border-radius: 6px;
+  left: -50px;
+}
+#menuHeader .dropdown-menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  left: 49%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+  border-right: none;
+  background-color: white;
+}
+#menuHeader .nav-item .dropdown-toggle::after {
+  display: none;
 }
 #menuHeader .nav-item .dropdown-item {
   position: relative;
   font-weight: 400;
-  position: relative;
   padding-top: 0;
   padding-bottom: 14px;
 }
@@ -69,51 +86,31 @@
 #menuHeader .nav-item .dropdown-item:hover::before {
   width: 20px;
 }
-#menuHeader .nav-item .btn {
+.btn {
   transition: 0.3s ease-out;
   display: inline-block;
   line-height: 52px;
   font-weight: 700;
   font-size: 14px;
-  margin-left: 16px;
   padding: 0px 30px;
-  text-transform: uppercase;
+}
+.btn-outline {
   color: #dc4f72;
   border-color: #dc4f72;
+  line-height: 52px;
 }
-#menuHeader .nav-item .btn:hover {
-  color: white !important;
+#menuHeader .nav-item .btn {
+  margin-left: 16px;
+}
+.btn-outline:hover {
+  color: white;
   background-color: #dc4f72;
-}
-#menuHeader .nav-item:hover .nav-link {
-  color: #dc4f72;
-}
-#menuHeader .dropdown-menu {
-  position: absolute;
-  left: -50px;
-}
-#menuHeader .dropdown-menu:before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  display: block;
-  border-right: none;
-  border-bottom: none;
-  transform: translateX(-50%) rotateZ(45deg);
-  position: absolute;
-  top: -7px;
-  left: 49%;
-  z-index: 1001;
 }
 /*#endregion */
 /*#region BANNER*/
 .master__banner {
-  position: relative;
   overflow: hidden;
   padding-top: 80px;
-  background-color: #fff;
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
     url(../img/banner.jpg);
   background-repeat: no-repeat;
@@ -129,31 +126,14 @@
 }
 .master__banner .banner__left p {
   font-size: 20px;
-  margin-top: 16px;
-  margin-bottom: 48px;
   max-width: 450px;
   color: #5a5a5a;
-}
-.master__banner .banner__left .btn {
-  transition: 0.3s ease-out;
-  display: inline-block;
-  line-height: 52px;
-  font-weight: 700;
-  font-size: 14px;
-  margin: 0px;
-  padding: 0px 30px;
-  text-transform: uppercase;
-  border-color: #dc4f72;
-  color: #dc4f72;
-}
-.master__banner .banner__left .btn:hover {
-  background-color: #dc4f72;
-  color: white;
 }
 .master__banner .banner__img img {
   transform: rotate(180deg);
 }
-/* Introduce */
+/* #endregion */
+/*#region Introduce */
 .header__section {
   max-width: 750px;
 }
@@ -190,34 +170,29 @@
   transform: translateY(-8px);
   cursor: pointer;
 }
-/* ABOUT */
+/* #endregion */
+/* #region ABOUT */
 .master__about .header__section h1 {
   font-size: 35px;
 }
 .master__about img {
-  border-radius: 8px;
+  border-radius: 6px;
   transition: 0.3s ease-in-out;
 }
 .master__about img:hover {
   transform: translateY(-8px);
 }
 .master__about input[type="button"] {
-  transition: 0.3s ease-out;
-  line-height: 52px;
-  font-weight: 700;
-  font-size: 14px;
-  margin: 0px;
-  padding: 0px 30px;
   background: #dc4f72;
-  color: white;
   border-color: #dc4f72;
+  color: white;
 }
 .master__about input[type="button"]:hover {
-  color: #fff;
-  background-color: #d62f58;
   border-color: #cf2952;
+  background-color: #cf2952;
 }
-/* NUMBER */
+/* #endregion */
+/*#region NUMBER */
 .master__number .number__item {
   background-color: #fff;
   padding: 2rem 1.9rem;
@@ -243,3 +218,4 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transition: 0.3s ease;
 }
+/* #endregion */

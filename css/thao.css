@@ -245,7 +245,7 @@
     color: white;
     background-color: #dc4f72;
   }
-  #header .navbar-collapse {
+  #header .navbar-nav {
     padding: 20px 0;
   }
   #header .nav-item .nav-link {

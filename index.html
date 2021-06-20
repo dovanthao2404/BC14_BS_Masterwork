@@ -33,64 +33,70 @@
   </head>
   <body>
     <header id="header" class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-ligth">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
         <div class="container-xl">
-          <a href="" class="navbar-brand">
+          <a href="" class="navbar-brand p-0">
             <i class="fa fa-handshake"></i> <span>Masterwork</span>
           </a>
           <button
-            class="navbar-toggler"
+            id="btn-toggle"
+            class="navbar-toggler p-0"
             data-toggle="collapse"
             data-target="#menuHeader"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="p-2 fa icon-expand fa-bars" onclick="iconNavbar()"></i>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
             id="menuHeader"
           >
             <ul class="navbar-nav">
-              <li class="nav-item mx-3">
+              <li class="nav-item text-center mx-3">
                 <a href="" class="nav-link active">Home</a>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item text-center mx-3">
                 <a href="" class="nav-link">About</a>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item text-center mx-3">
                 <a href="" class="nav-link">Srevices</a>
               </li>
-              <li class="nav-item mx-3 dropdown">
+              <li class="nav-item text-center mx-3 dropdown">
                 <a
                   href=""
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
                   role="button"
+                  aria-expanded="false"
+                  onclick="dropdownPages()"
                   >Pages <i class="fa fa-angle-down"></i
                 ></a>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu text-center text-lg-left">
                   <a href="" class="dropdown-item">Blog posts</a>
                   <a href="" class="dropdown-item">Blog single</a>
                   <a href="" class="dropdown-item">Langding page</a>
                 </div>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item text-center mx-3">
                 <a href="" class="nav-link">Contact</a>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item text-center mx-3">
                 <a href="" class="btn btn-outline">SCHEDULE A DEMO</a>
               </li>
             </ul>
+          </div>
+          <div class="them__switch">
+            <span class="fa fa-moon"></span>
           </div>
         </div>
       </nav>
     </header>
     <section class="master__banner">
-      <div class="container">
+      <div class="container-lg">
         <div class="row align-items-center">
-          <div class="col-6">
+          <div class="col-lg-6">
             <div class="banner__left">
               <h1>We Execute Our Ideas From Start to Finish</h1>
-              <p class="mb-5 mt-3">
+              <p class="mt-3 mb-4 mb-lg-5">
                 Building a beautiful interactive business for startups and
                 innovative companies.
               </p>
@@ -101,7 +107,7 @@
               />
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 mt-lg-0 mt-5">
             <div class="banner__img">
               <img src="./img/main.png" class="img-fluid" alt="main image" />
             </div>
@@ -110,18 +116,18 @@
       </div>
     </section>
     <section class="master__introduce py-5">
-      <div class="container">
+      <div class="container-lg">
         <div class="header__section text-center mx-auto">
           <h6>WHY CHOOSE US</h6>
           <h1>Tools for business startup to professional</h1>
-          <p class="my-3">
+          <p class="my-3 px-2 px-sm-0">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
             posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
             sodales quis. Integer sit amet mattis quam.
           </p>
         </div>
         <div class="row">
-          <div class="col-4 mt-5">
+          <div class="col-md-6 col-lg-4 mt-5">
             <div class="introduce__item text-center">
               <img src="./img/s1.png" alt="" />
               <h3 class="my-3">Interactive</h3>
@@ -131,7 +137,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4 mt-5">
+          <div class="col-md-6 col-lg-4 mt-5">
             <div class="introduce__item text-center">
               <img src="./img/s2.png" alt="" />
               <h3 class="my-3">Business</h3>
@@ -141,7 +147,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4 mt-5">
+          <div class="col-lg-4 mt-5">
             <div class="introduce__item text-center">
               <img src="./img/s3.png" alt="" />
               <h3 class="my-3">Inspiration</h3>
@@ -155,15 +161,15 @@
       </div>
     </section>
     <section class="master__about py-5">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
-          <div class="col-6 pr-5">
-            <div class="header__section mx-auto">
+          <div class="col-lg-6 pr-lg-5">
+            <div class="header__section mx-lg-auto">
               <h6>ABOUT OUR COMPANY</h6>
-              <h1 class="mb-4">
+              <h1 class="mb-md-4 mb-3">
                 The Best Choice For Your Successful Business!
               </h1>
-              <p class="mb-5">
+              <p class="mb-4 mb-md-5">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
                 repellendus illum harum quam nihil totam reprehenderit! Ut sed
                 eveniet quos! Asperiores officia, repudiandae similique
@@ -173,16 +179,16 @@
             </div>
             <input type="button" class="btn" value="READ MORE" />
           </div>
-          <div class="col-6 pl-5">
+          <div class="col-lg-6 pl-lg-5 mt-lg-0 mt-5">
             <img class="img-fluid shadow" src="./img/about.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
     <section class="master__number pb-5 pt-4">
-      <div class="container">
+      <div class="container-lg">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
             <div class="number__item">
               <h4>Happy Customers</h4>
               <span class="counter my-2">10458</span>
@@ -192,7 +198,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
             <div class="number__item">
               <h4>Happy Customers</h4>
               <span class="counter my-2">890</span>
@@ -202,7 +208,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
             <div class="number__item">
               <h4>Happy Customers</h4>
               <span class="counter my-2">5345</span>
@@ -240,6 +246,25 @@
           $("#header").removeClass("nav__fixed");
         }
       });
+    </script>
+    <!-- ICON NAVBAR  -->
+    <script>
+      function iconNavbar() {
+        let ariaExpandedBtn = document
+          .getElementById("btn-toggle")
+          .getAttribute("aria-expanded");
+        if (ariaExpandedBtn == "true") {
+          $("#header .navbar-toggler .fa").addClass("icon-expand");
+          $("#header .navbar-toggler .fa").addClass("fa-bars");
+          $("#header .navbar-toggler .fa").removeClass("icon-close");
+          $("#header .navbar-toggler .fa").removeClass("fa-times");
+        } else {
+          $("#header .navbar-toggler .fa").addClass("icon-close");
+          $("#header .navbar-toggler .fa").addClass("fa-times");
+          $("#header .navbar-toggler .fa").removeClass("icon-expand");
+          $("#header .navbar-toggler .fa").removeClass("fa-bars");
+        }
+      }
     </script>
     <!-- WAYPOINT -->
     <script

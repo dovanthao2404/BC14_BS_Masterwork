@@ -30,20 +30,21 @@
   color: #dc4f72;
 }
 #menuHeader .nav-item .nav-link {
-  padding: 14px 0;
+  position: relative;
   transition: all 0.5s ease;
   color: #333;
   font-weight: 400;
+  padding: 14px 0;
 }
 #menuHeader .nav-item:hover .nav-link {
   color: #dc4f72;
 }
 #menuHeader .nav-item .dropdown-menu {
   padding: 16px 0 4px;
-  position: absolute;
-  min-width: 175px;
   border-radius: 6px;
-  left: -50px;
+  left: -60px;
+  min-width: 175px;
+  position: absolute;
 }
 #menuHeader .dropdown-menu::before {
   content: "";
@@ -74,13 +75,13 @@
 }
 #menuHeader .nav-item .nav-link::before,
 #menuHeader .nav-item .dropdown-item::before {
+  transition: all 0.5s;
   position: absolute;
   content: "";
   background: #dc4f72;
   width: 0px;
   height: 2px;
   bottom: 13px;
-  transition: all 0.5s;
 }
 #menuHeader .nav-item .nav-link:hover::before,
 #menuHeader .nav-item .dropdown-item:hover::before {
@@ -158,6 +159,7 @@
 .introduce__item h3 {
   font-weight: 700;
   color: #2c3038;
+  font-size: 26px;
 }
 .introduce__item p {
   color: #5a5a5a;
@@ -172,6 +174,9 @@
 }
 /* #endregion */
 /* #region ABOUT */
+.master__about {
+  background-color: #f7f9fc;
+}
 .master__about .header__section h1 {
   font-size: 35px;
 }
@@ -193,6 +198,9 @@
 }
 /* #endregion */
 /*#region NUMBER */
+.master__number {
+  background-color: #f7f9fc;
+}
 .master__number .number__item {
   background-color: #fff;
   padding: 2rem 1.9rem;
@@ -219,3 +227,68 @@
   transition: 0.3s ease;
 }
 /* #endregion */
+/* Responsive Header */
+@media only screen and (max-width: 991.98px) {
+  #header {
+    height: auto;
+    padding: 15px 0;
+  }
+  #header.nav__fixed {
+    height: auto;
+    padding: 10px 0;
+  }
+  #header .navbar-toggler i {
+    width: 36px;
+    height: 36px;
+  }
+  #header .navbar-toggler {
+    color: white;
+    background-color: #dc4f72;
+  }
+  #header .navbar-collapse {
+    padding: 20px 0;
+  }
+  #header .nav-item .nav-link {
+    padding: 8px 0;
+  }
+  #menuHeader .nav-item .nav-link::before,
+  #menuHeader .nav-item .dropdown-item::before {
+    bottom: 5px;
+  }
+  #header .nav-item .dropdown-menu {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  #header .them__switch {
+    position: absolute;
+    right: 70px;
+    top: 8px;
+  }
+  /* Banner */
+  .master__banner {
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .btn-outline,
+  .btn {
+    line-height: 44px;
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .master__banner .banner__left h1 {
+    font-size: 40px;
+  }
+  .header__section h1 {
+    font-size: 32px;
+  }
+  .master__number .number__item h4 {
+    font-size: 17px;
+  }
+  .master__number .number__item .counter {
+    font-size: 40px;
+  }
+}

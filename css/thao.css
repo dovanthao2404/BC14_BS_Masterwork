@@ -7,6 +7,8 @@
   --border-color: #eee;
   --banner-color: rgba(255, 255, 255, 0.92);
   --pink-color: #dc4f72;
+  --shadow-number: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  --shadow-number-hover: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 .dark-theme {
   --dark-color: #f7f9fc;
@@ -16,6 +18,8 @@
   --border-color: #0c0e16;
   --banner-color: rgba(0, 0, 0, 0.92);
   background-color: var(--white);
+  --shadow-number-hover: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  --shadow-number: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 #theme__switch {
   font-size: 24px;
@@ -43,11 +47,11 @@
 #header .container-xl {
   padding: 0;
 }
-#header .navbar-brand {
+#header .navbar-brand--logo {
   margin-left: 15px;
 }
-#header .navbar-brand i,
-#header .navbar-brand span {
+#header .navbar-brand--logo i,
+#header .navbar-brand--logo span {
   color: var(--pink-color);
   font-weight: 700;
   font-size: 26px;
@@ -237,8 +241,7 @@
   background-color: var(--white);
   padding: 2rem 1.9rem;
   border-radius: 6px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
-  /* box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2); */
+  box-shadow: var(--shadow-number);
   transition: 0.3s ease;
   border: 1px solid var(--white);
 }
@@ -257,8 +260,7 @@
   font-weight: 700;
 }
 .master__number .number__item:hover {
-  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
-  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09); */
+  box-shadow: var(--shadow-number-hover);
   transition: 0.3s ease;
 }
 /* #endregion */
@@ -280,7 +282,7 @@
     color: var(--white);
     background-color: var(--pink-color);
   }
-  #header .navbar-nav {
+  #header .navbar-nav--menu {
     padding: 20px 0;
   }
   #header .nav-item .nav-link {

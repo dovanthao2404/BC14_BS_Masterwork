@@ -109,8 +109,8 @@
   .solutions__item {
     border-radius: 6px;
     transition: 0.3s ease-in;
-    background-color: var(--light-color);
-    border: 1px solid white);
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
 
   }
   .solutions__text p {
@@ -198,7 +198,7 @@
   }
   .faqs__item {
     line-height: 24.5px;
-    position: relative;
+    position: relative; 
     overflow: hidden;
     max-height: 800px;
     opacity: 1;

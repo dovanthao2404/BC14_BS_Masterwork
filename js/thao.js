@@ -5,6 +5,7 @@ icon.onclick = function iconNavbar() {
   icon.classList.toggle("icon-close");
   icon.classList.toggle("fa-times");
 };
+
 $(".counter").countUp();
 var themeSwitch = document.getElementById("theme__switch");
 themeSwitch.onclick = function () {

@@ -16,8 +16,8 @@
   --light-color: #2c3038;
   --white: #212529;
   --grey-color: #ffffff;
-  --border-color-introduce: #2c3038;
-  --border-color: #0c0e16;
+  --border-color: #2c3038;
+  /* --border-color: #0c0e16; */
   --banner-color: rgba(0, 0, 0, 0.92);
   background-color: var(--white);
   --shadow-number-hover: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
@@ -194,7 +194,7 @@
 .introduce__item:hover {
   transition: 0.3s ease-in;
   background: var(--light-color);
-  border: 1px solid var(--border-color-introduce);
+  border: 1px solid var(--border-color);
   box-shadow: var(--shadow-number-hover);
   transform: translateY(-8px);
   cursor: pointer;

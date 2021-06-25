@@ -5,7 +5,6 @@
   --white: #fff;
   --grey-color: #5a5a5a;
   --border-color: #eee;
-  --border-color-introduce: #eee;
   --banner-color: rgba(255, 255, 255, 0.92);
   --pink-color: #dc4f72;
   --shadow-number: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
@@ -16,7 +15,6 @@
   --light-color: #2c3038;
   --white: #212529;
   --grey-color: #ffffff;
-  --border-color-introduce: #2c3038;
   --border-color: #0c0e16;
   --banner-color: rgba(0, 0, 0, 0.92);
   background-color: var(--white);
@@ -194,8 +192,8 @@
 .introduce__item:hover {
   transition: 0.3s ease-in;
   background: var(--light-color);
-  border: 1px solid var(--border-color-introduce);
-  box-shadow: var(--shadow-number-hover);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transform: translateY(-8px);
   cursor: pointer;
 }
@@ -244,10 +242,6 @@
   transition: 0.3s ease;
   border: 1px solid var(--white);
 }
-.master__number .number__item:hover {
-  box-shadow: var(--shadow-number-hover);
-  transition: 0.3s ease;
-}
 .master__number .number__item h4 {
   color: var(--dark-color);
   font-weight: 700;
@@ -261,6 +255,10 @@
   font-size: 50px;
   color: var(--pink-color);
   font-weight: 700;
+}
+.master__number .number__item:hover {
+  box-shadow: var(--shadow-number-hover);
+  transition: 0.3s ease;
 }
 /* #endregion */
 /* Responsive Header */
@@ -278,7 +276,7 @@
     height: 36px;
   }
   #header .navbar-toggler {
-    color: #fff;
+    color: var(--white);
     background-color: var(--pink-color);
   }
   #header .navbar-nav--menu {
@@ -307,9 +305,6 @@
   }
 }
 @media only screen and (max-width: 767.98px) {
-  .header__section h1 {
-    font-size: 40px;
-  }
   .btn-outline,
   .btn {
     line-height: 44px;
@@ -318,9 +313,6 @@
 }
 
 @media only screen and (max-width: 575.98px) {
-  .header__section h1 {
-    font-size: 32px;
-  }
   .master__banner .banner__left h1 {
     font-size: 40px;
   }

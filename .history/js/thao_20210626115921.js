@@ -8,13 +8,7 @@ $(window).scroll(function () {
 });
 
 var dropdownBefore = document.querySelector("#menuHeader .dropdown-toggle");
-dropdownBefore.onclick = function () {
-  if (window.innerWidth < 992 && !(dropdownBefore.style.position == "unset")) {
-    dropdownBefore.style.position = "unset";
-  } else {
-    dropdownBefore.style.position = "relative";
-  }
-};
+console.log(dropdownBefore);
 
 var icon = document.querySelector("#header .navbar-toggler .fa");
 icon.onclick = function iconNavbar() {

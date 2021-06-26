@@ -112,7 +112,15 @@
   background-color: transparent;
   color: var(--pink-color);
 }
-#menuHeader .nav-item .nav-link::before,
+#menuHeader .nav-item .nav-link::before {
+  transition: all 0.5s;
+  position: absolute;
+  content: "";
+  background: var(--pink-color);
+  width: 0px;
+  height: 2px;
+  bottom: 13px;
+}
 #menuHeader .nav-item .dropdown-item::before {
   transition: all 0.5s;
   position: absolute;

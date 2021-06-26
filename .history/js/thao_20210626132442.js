@@ -12,7 +12,6 @@ dropdownBefore.onclick = function () {
   if (window.innerWidth < 992 && !(dropdownBefore.style.position == "unset")) {
     dropdownBefore.style.position = "unset";
   } else {
-    dropdownBefore.style.position = "relative";
   }
 };
 

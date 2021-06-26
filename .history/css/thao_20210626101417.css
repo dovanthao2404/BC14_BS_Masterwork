@@ -6,8 +6,6 @@
   --grey-color: #5a5a5a;
   --border-color: #eee;
   --border-color-introduce: #eee;
-  --background-introduce: #f7f9fc;
-  --introduce-hover: #fff;
   --banner-color: rgba(255, 255, 255, 0.92);
   --pink-color: #dc4f72;
   --shadow-number: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
@@ -17,10 +15,8 @@
   --dark-color: #f7f9fc;
   --light-color: #2c3038;
   --white: #212529;
-  --grey-color: #b7b7b7;
+  --grey-color: #ffffff;
   --border-color-introduce: #2c3038;
-  --background-introduce: #212529;
-  --introduce-hover: #2c3038;
   --border-color: #0c0e16;
   --banner-color: rgba(0, 0, 0, 0.92);
   background-color: var(--white);
@@ -191,14 +187,14 @@
 }
 .introduce__item {
   padding: 3rem 2rem;
-  background-color: var(--background-introduce);
-  border: 1px solid var(--light-color);
+  background-color: var(--light-color);
+  /* border: 1px solid var(--light-color); */
   transition: 0.3s ease-in;
 }
 .introduce__item:hover {
   transition: 0.3s ease-in;
-  background: var(--introduce-hover);
-  border: 1px solid var(--border-color-introduce);
+  background: var(--white);
+  /* border: 1px solid var(--border-color-introduce); */
   box-shadow: var(--shadow-number-hover);
   transform: translateY(-8px);
   cursor: pointer;

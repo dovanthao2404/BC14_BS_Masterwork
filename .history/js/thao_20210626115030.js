@@ -1,3 +1,4 @@
+<script>
 $(window).scroll(function () {
   var sc = $(window).scrollTop();
   if (sc > 100) {
@@ -6,15 +7,6 @@ $(window).scroll(function () {
     $("#header").removeClass("nav__fixed");
   }
 });
-
-var dropdownBefore = document.querySelector("#menuHeader .dropdown-toggle");
-dropdownBefore.onclick = function () {
-  if (window.innerWidth < 992 && !(dropdownBefore.style.position == "unset")) {
-    dropdownBefore.style.position = "unset";
-  } else {
-    dropdownBefore.style.position = "relative";
-  }
-};
 
 var icon = document.querySelector("#header .navbar-toggler .fa");
 icon.onclick = function iconNavbar() {

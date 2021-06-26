@@ -1,3 +1,5 @@
+// Easy Reponsive Tab
+
 $(document).ready(function() {
     //Horizontal Tab
     $('#parentHorizontalTab').easyResponsiveTabs({
@@ -12,5 +14,39 @@ $(document).ready(function() {
             $name.text($tab.text());
             $info.show();
         }
+    });
+});
+
+
+// Slick Carousel
+$(document).ready(function () {
+    $('.slick-wrapper').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        arrows:false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }
+            
+        ]
     });
 });

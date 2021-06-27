@@ -11,9 +11,7 @@ var dropdownBefore = document.querySelector("#menuHeader .dropdown-toggle");
 
 $(window).on("resize", function () {
   if ($(window).width() > 991) {
-    if (dropdownBefore.getAttribute("aria-expanded") == "true") {
-      dropdownBefore.style.position = "unset"
-    }
+    $("header").removeClass("active");
   }
 });
 

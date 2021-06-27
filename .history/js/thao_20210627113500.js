@@ -7,23 +7,14 @@ $(window).scroll(function () {
   }
 });
 
-var dropdownBefore = document.querySelector("#menuHeader .dropdown-toggle");
-
-$(window).on("resize", function () {
-  if ($(window).width() > 991) {
-    if (dropdownBefore.getAttribute("aria-expanded") == "true") {
-      dropdownBefore.style.position = "unset"
-    }
-  }
-});
-
-dropdownBefore.onclick = function () {
-  if (window.innerWidth < 992 && !(dropdownBefore.style.position == "unset")) {
-    dropdownBefore.style.position = "unset";
-  } else {
-    dropdownBefore.style.position = "relative";
-  }
-};
+// var dropdownBefore = document.querySelector("#menuHeader .dropdown-toggle");
+// dropdownBefore.onclick = function () {
+//   if (window.innerWidth < 992 && !(dropdownBefore.style.position == "unset")) {
+//     dropdownBefore.style.position = "unset";
+//   } else {
+//     dropdownBefore.style.position = "relative";
+//   }
+// };
 
 // $(".navbar-toggler").on("click", function () {
 //   $("header").toggleClass("active");

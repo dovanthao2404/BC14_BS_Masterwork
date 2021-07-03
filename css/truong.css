@@ -59,12 +59,7 @@
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-.header__section h3 {
-  color: var(--dark-color);
-  font-size: 46px;
-  line-height: 1;
-  font-weight: 700;
-}
+
 .header__section p {
   font-size: 16px;
   line-height: 22.5px;

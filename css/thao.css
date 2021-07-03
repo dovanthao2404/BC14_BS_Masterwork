@@ -271,7 +271,7 @@
   font-weight: 700;
 }
 /* #endregion */
-/* Responsive Header */
+/* Responsive Header *
 @media only screen and (max-width: 991.98px) {
   #header {
     height: auto;
